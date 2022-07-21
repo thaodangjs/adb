@@ -1,0 +1,25 @@
+{equipmentTable && 
+                <table className="def-tbl">
+                    <thead>
+                        <th>Manufacturer</th>
+                        <th>Model Number</th>
+                        <th>Serial Number</th>
+                    </thead>
+                    <tbody>
+                        {console.log(equipmentTable)}
+                        {equipmentTable.manufacturer.map((value) => (
+                            <tr>
+                                <td>
+                                    {value}
+                                </td>
+                            </tr>
+                        ))}
+                        {equipmentTable.serialNumber.map((value) => (
+                            <tr>
+                                <td>
+                                    {value}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>}
