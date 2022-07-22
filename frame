@@ -1,0 +1,15 @@
+const [textLocation, setTextLocation] = useState(1);
+
+const moveText = () => {
+  setTextLocation(textLocation + 1);
+}
+
+<div className="grid grid-cols-12">
+  <motion.div layout className={`bg-red-300 col-start-${textLocation}`}>
+    Text
+  </motion.div>
+</div>
+
+<button onClick={moveText}>
+  Move Text
+</button>
